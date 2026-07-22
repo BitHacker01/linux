@@ -149,7 +149,7 @@ So `chmod 754` means:
 
 **What it does:** Changes the read/write/execute permissions of a file or directory.
 
-#### 2.Numeric mode
+#### 1.Numeric mode
 
 bash
 
@@ -161,7 +161,7 @@ chmod 777 file.sh        # rwxrwxrwx (dangerous — avoid)
 chmod 000 file.txt       # no permissions for anyone
 ```
 
-#### 3.Symbolic mode
+#### 2.Symbolic mode
 
 bash
 
@@ -174,7 +174,7 @@ chmod u+x,g-w file.txt   # Multiple changes at once
 chmod go= file.txt       # Remove all permissions from group & others
 ```
 
-#### 4.Recursive
+#### 3.Recursive
 
 bash
 
