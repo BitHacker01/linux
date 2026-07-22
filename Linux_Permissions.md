@@ -477,58 +477,30 @@ ls -la /var/www/html
 
 ### 📋 Quick Reference Cheat Sheet
 
-Task
+Task                                    Command
 
-Command
+Create user with home                `useradd -m -s /bin/bash username`
 
-Create user with home
+Set password                         `passwd username`
 
-`useradd -m -s /bin/bash username`
+Add to group                         `usermod -aG groupname username`
 
-Set password
+Delete user + home                   `userdel -r username`
 
-`passwd username`
+Lock account                         `passwd -l username`
 
-Add to group
+Change permissions (numeric)         `chmod 755 file`
 
-`usermod -aG groupname username`
+Change permissions (symbolic)        `chmod u+x,g-w file`
 
-Delete user + home
+Change owner                         `chown user:group file`
 
-`userdel -r username`
+Recursive ownership                  `chown -R user:group /dir`
 
-Lock account
+Set SGID on directory                `chmod g+s /dir`
 
-`passwd -l username`
+Set sticky bit                       `chmod +t /dir`
 
-Change permissions (numeric)
+View permissions                     `ls -la`
 
-`chmod 755 file`
-
-Change permissions (symbolic)
-
-`chmod u+x,g-w file`
-
-Change owner
-
-`chown user:group file`
-
-Recursive ownership
-
-`chown -R user:group /dir`
-
-Set SGID on directory
-
-`chmod g+s /dir`
-
-Set sticky bit
-
-`chmod +t /dir`
-
-View permissions
-
-`ls -la`
-
-View user info
-
-`id username`
+View user info                       `id username`
